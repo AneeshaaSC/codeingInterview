@@ -14,7 +14,7 @@ class Solution:
             return ['0','1']
         
         temp = self.BinaryGray(n-1)
-        temp1 = temp
+        temp1 = self.BinaryGray(n-1)
         temp1.reverse()
         
         result = []
