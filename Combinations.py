@@ -10,8 +10,8 @@ class Solution:
         
         
     def helper(self, array, currentK, k ,result):
-#        if (currentK == k and currentK != 1):
-#                return result
+        if (currentK == k+1):
+                return result
         tempArray = []       
         if(currentK == 1):
             for i in array:
@@ -26,12 +26,8 @@ class Solution:
                 for x in array[result[i][len(result[i])-1]::] :
                    tempArray.append(result[i]+[x])
             result = self.helper(array, currentK+1, k , tempArray)
-        
+            
+
+
         return result
 
-
-
-
-
-            
-        
