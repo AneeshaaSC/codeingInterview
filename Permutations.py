@@ -17,4 +17,7 @@ class Solution:
                 x.insert(0,temp)
                 result.append(x)
         return result 
-                
+               
+b=Solution()
+print b.permute([1,2,3,4,5]) 
+
